@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Weather Cities Project</h1>
+      <div class="searchBar">
+        <div class="search">
+          <span class="material-symbols-outlined"> search </span>
+          <input
+            id="search_bar"
+            type="text"
+            placeholder="Search for City or Airport"
+          />
+        </div>
+        <div class="addButton">
+          <button type="button" onclick="ans()">Add City</button>
+        </div>
+      </div>
+      <div id="cardContainer" class="cardContainer">
+        <div class="card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="339"
+            height="175"
+            viewBox="0 0 339 175"
+            fill="none"
+          >
+            <path
+              d="M0.42749 66.6407C0.42749 31.7636 0.42749 14.325 11.7839 5.31681C23.1403 -3.69137 40.1213 0.277541 74.0831 8.21537L304.442 62.0566C320.747 65.8675 328.899 67.773 333.663 73.779C338.427 79.7849 338.427 88.1572 338.427 104.902V131C338.427 151.742 338.427 162.113 331.984 168.556C325.54 175 315.169 175 294.427 175H44.4275C23.6857 175 13.3148 175 6.87114 168.556C0.42749 162.113 0.42749 151.742 0.42749 131V66.6407Z"
+              fill="url(#paint0_linear_638_13)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_638_13"
+                x1="0.42749"
+                y1="128"
+                x2="350.427"
+                y2="128"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#5936B4" />
+                <stop offset="1" stop-color="#362A84" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="left">
+            <div class="temperature">13°</div>
+            <div class="details">
+              <div class="topDetails">H:16° L:8°</div>
+              <div class="locDetails">Tokyo,Japan</div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="image">
+              <img
+                src="./images/Sun cloud angled rain.png"
+                alt=""
+                width="140px"
+                height="140px"
+              />
+            </div>
+            <div class="weather">Showers</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
