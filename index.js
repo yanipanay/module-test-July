@@ -12,7 +12,7 @@ const arr = [];
 async function getData(url) {
   const FetchedData = await fetch(url);
   const data = await FetchedData.json();
-  console.log(data);
+  //   console.log(data);
   return data;
 }
 
@@ -29,15 +29,15 @@ function City(temp, tempH, tempL, name, country, details, main) {
 async function ans() {
   const searchBar = document.getElementById("search_bar");
   const city = searchBar.value;
+  searchBar.value = "";
   if (city === "" || set.has(city.toUpperCase())) return;
   set.add(city.toUpperCase());
-  console.log(set);
+  //   console.log(set);
   const data = await getData(
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API}&units=metric`
   );
   //   console.log(data);
   const temp = data.main.temp;
-  console.log(temp, typeof temp);
   const tempL = data.main.temp_min;
   const tempH = data.main.temp_max;
   const name = data.name;
